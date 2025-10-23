@@ -47,6 +47,10 @@
     <?php include_once  __DIR__ .'/modulos/onde-vamos-tocar/index.php'; ?>
     <!-- ONDE VAMOS TOCAR -->
 
+    <!-- NOSSA EQUIPE -->
+    <?php include_once  __DIR__ .'/modulos/nossa-equipe/index.php'; ?>
+    <!-- NOSSA EQUIPE -->
+
 
 
 

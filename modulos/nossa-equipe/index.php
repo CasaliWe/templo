@@ -1,0 +1,69 @@
+<style>
+    #container-nossa-equipe{
+        background-image: url('<?= $base_url ?>assets/imagens/site/banner-nossa-equipe-desktop.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #title-nossa-equipe{
+        width: 290px;
+    }
+
+    .nome-integrante{
+        font-size: 25px !important;
+    }
+    .instrumento{
+        font-size: 18px !important;
+    }
+    
+    @media(max-width:992px) {
+        .nome-integrante{
+            font-size: 35px !important;
+        }
+        .instrumento{
+            font-size: 22px !important;
+        }
+    }
+</style>
+
+<section class="py-5" id="container-nossa-equipe">
+    <div class="container mx-auto py-3">
+        <div class="text-center mb-5">
+            <img id="title-nossa-equipe" src='<?= $base_url ?>assets/imagens/site/title-nossa-equipe.png'>
+        </div>
+
+        <div class="row px-3 px-lg-0">
+            <div class="mb-5 col-12 text-center col-lg-3 px-2">
+                <img class="w-100" src='<?= $base_url ?>assets/imagens/site/integrante-1.png'>
+                <h3 class="nome-integrante mt-3 mb-0 text-white fw-bold">LUCCA</h3>
+                <p class="instrumento font-inter-2 mt-0 text-0">Vocalista</p>
+            </div>
+
+            <div class="mb-5 col-12 text-center col-lg-3 px-2">
+                <img class="w-100" src='<?= $base_url ?>assets/imagens/site/integrante-2.png'>
+                <h3 class="nome-integrante mt-3 mb-0 text-white fw-bold">LUCCA</h3>
+                <p class="instrumento font-inter-2 mt-0 text-0">Vocalista</p>
+            </div>
+
+            <div class="mb-5 col-12 text-center col-lg-3 px-2">
+                <img class="w-100" src='<?= $base_url ?>assets/imagens/site/integrante-3.png'>
+                <h3 class="nome-integrante mt-3 mb-0 text-white fw-bold">LUCCA</h3>
+                <p class="instrumento font-inter-2 mt-0 text-0">Vocalista</p>
+            </div>
+
+            <div class="col-12 text-center col-lg-3 px-2">
+                <img class="w-100" src='<?= $base_url ?>assets/imagens/site/integrante-4.png'>
+                <h3 class="nome-integrante mt-3 mb-0 text-white fw-bold">LUCCA</h3>
+                <p class="instrumento font-inter-2 mt-0 text-0">Vocalista</p>
+            </div>
+        </div>
+
+        <p class="text-center mb-4 mt-5 text-white font-inter-2 px-3 px-lg-0">Conheça mais sobre nosso trabalho nas plataformas digitais</p>
+
+        <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row">
+            <a href="#" target="_blank" class="mb-3 mx-2"><img style="height: 40px;" src='<?= $base_url ?>assets/imagens/site/youtube-music.png'></a>
+            <a href="#" target="_blank" class="mb-3 mx-2"><img style="height: 40px;" src='<?= $base_url ?>assets/imagens/site/spotify-music.png'></a>
+        </div>
+    </div>
+</section>
