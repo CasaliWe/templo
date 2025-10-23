@@ -43,7 +43,9 @@
     <?php include_once  __DIR__ .'/modulos/a-banda/index.php'; ?>
     <!-- A BANDA -->
 
-
+    <!-- ONDE VAMOS TOCAR -->
+    <?php include_once  __DIR__ .'/modulos/onde-vamos-tocar/index.php'; ?>
+    <!-- ONDE VAMOS TOCAR -->
 
 
 
