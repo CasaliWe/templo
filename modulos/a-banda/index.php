@@ -17,6 +17,13 @@
         object-fit: cover;
         object-position: center;
     }
+    .container-img-registro a{
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
     @media(min-width:1500px) {
         .container-img-registro{
@@ -51,19 +58,35 @@
 
         <div class="row mb-5 pb-4">
             <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro"><img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'></div>
+                <div class="container-img-registro">
+                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
+                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
+                    </a>
+                </div>
             </div>
 
             <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro"><img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'></div>
+                <div class="container-img-registro">
+                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
+                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
+                    </a>
+                </div>
             </div>
 
             <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro"><img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'></div>
+                <div class="container-img-registro">
+                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
+                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
+                    </a>
+                </div>
             </div>
 
             <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro"><img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'></div>
+                <div class="container-img-registro">
+                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
+                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
+                    </a>
+                </div>
             </div>
         </div>
 
