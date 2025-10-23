@@ -1,0 +1,16 @@
+{
+    "require": {
+        "php": "^8.2",
+        "vlucas/phpdotenv": "^5.4",
+        "illuminate/database": "^8.0",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Models\\": "models/",
+            "Helpers\\": "helpers/",
+            "Repositories\\": "repositories/",
+            "Core\\": "core/"
+        }
+    }
+}

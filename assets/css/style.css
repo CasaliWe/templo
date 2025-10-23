@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+a{
+    text-decoration: none !important;
+    transition: 300ms !important;
+}
+a:hover{
+    opacity: .9 !important;
+    transition: 500ms !important;
+}
+
+*{
+    font-family: "Anton", sans-serif;
+}
+
+
+.font-bebas{
+    font-family: "Bebas Neue", sans-serif !important;
+}
+.font-kanit{
+    font-family: "Kanit", sans-serif !important;
+}
+
+
+/* LINK ATIVO */
+.active-link{
+    color: #DB0000 !important;
+}
+
+
+/* PALHETA DE CORES */
+.text-0{
+    color: #DB0000 !important;
+}
+.bg-0{
+    background-color: #DB0000 !important;
+}
+.text-1{
+    color: black !important;
+}
+.bg-1{
+    background-color: black !important;
+}
+.text-2{
+    color: white !important;
+}
+.bg-2{
+    background-color: white !important;
+}
+.fundos{
+    background-color: #121212 !important;
+}
