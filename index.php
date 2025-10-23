@@ -39,6 +39,11 @@
     <?php include_once  __DIR__ .'/modulos/ouca/index.php'; ?>
     <!-- OUÇA -->
 
+    <!-- A BANDA -->
+    <?php include_once  __DIR__ .'/modulos/a-banda/index.php'; ?>
+    <!-- A BANDA -->
+
+
 
 
 
