@@ -35,6 +35,10 @@
     <?php include_once  __DIR__ .'/modulos/templo-na-midia/index.php'; ?>
     <!-- TEMPLO NA MIDIA -->
 
+    <!-- OUÇA -->
+    <?php include_once  __DIR__ .'/modulos/ouca/index.php'; ?>
+    <!-- OUÇA -->
+
 
 
 
