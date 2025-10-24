@@ -26,33 +26,8 @@
     </div>
 
     <div class="mb-4 col-12 col-lg-6">
-        <label for="facebook" class="small">Facebook*</label>
-        <input class="form-control" value="<?= $contatos->facebook; ?>" type="text" required name="facebook" id="facebook">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
-        <label for="@_facebook" class="small">@ do facebook*</label>
-        <input class="form-control" value="<?= $contatos->_facebook; ?>" type="text" required name="@_facebook" id="@_facebook">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
-        <label for="linkedin" class="small">LinkedIn*</label>
-        <input class="form-control" type="text" value="<?= $contatos->linkedin; ?>" required name="linkedin" id="linkedin">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
-        <label for="@_linkedin" class="small">@ do LinkedIn*</label>
-        <input class="form-control" type="text" value="<?= $contatos->_linkedin; ?>" required name="@_linkedin" id="@_linkedin">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
         <label for="email" class="small">E-mail*</label>
         <input class="form-control" type="email" value="<?= $contatos->email; ?>" required name="email" id="email">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
-        <label for="telefone" class="small">Telefone*</label>
-        <input class="form-control" type="tel" required value="<?= $contatos->telefone; ?>" name="telefone" id="telefone" maxlength="15" inputmode="tel">
     </div>
 
     <div class="mb-4 col-12 col-lg-6">

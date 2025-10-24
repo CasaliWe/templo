@@ -45,7 +45,7 @@
 </style>
 
 
-<section class="fundos py-5">
+<section id="banda" class="fundos py-5">
     <div class="container mx-auto py-3 px-4 px-lg-0">
         <img class="mb-3" id="title-a-banda" src='<?= $base_url ?>assets/imagens/site/title-a-banda.png'>
         <p class="text-white font-kanit mb-4" id="texto-a-banda">A <span class="text-0">Banda Templô</span> surge das entranhas da cultura underground de Passo Fundo/RS, carregando na voz e nos instrumentos a urgência de quem tem algo a dizer. <br><br> Nossa música é uma ponte entre o peso do rock e a poesia do cotidiano, onde a emoção encontra o palco, e o manifesto se transforma em canção. Acreditamos que a arte precisa ocupar espaços públicos, democratizar o acesso à cultura e ser ferramenta de transformação social.</p>

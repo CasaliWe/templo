@@ -18,6 +18,9 @@
 
 </head>
 <body>
+    <!-- WPP FLOAT -->
+    <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>
+    <!-- WPP FLOAT -->
 
     <!-- MENU -->
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
@@ -51,11 +54,13 @@
     <?php include_once  __DIR__ .'/modulos/nossa-equipe/index.php'; ?>
     <!-- NOSSA EQUIPE -->
 
+    <!-- CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/contato/index.php'; ?>
+    <!-- CONTATO -->
 
-
-
-
-
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
 
 
 

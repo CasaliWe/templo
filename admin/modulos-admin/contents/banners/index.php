@@ -107,7 +107,7 @@
 <!-- banners iniciais -->
 
 <!-- banner home -->
-<section class="w-100 mb-5 pb-4" style="overflow-x: auto;">
+<section class="d-none w-100 mb-5 pb-4" style="overflow-x: auto;">
     <h6 class="mb-3">Atualizar banner da página Home</h6>
 
     <!-- header -->

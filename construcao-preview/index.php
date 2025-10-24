@@ -1,5 +1,5 @@
 <?php
-   $base_url = 'http://localhost:8080/construcao-preview/'
+   $base_url = 'http://localhost/templo/construcao-preview/'
 ?>
 
 <!DOCTYPE html>
@@ -50,12 +50,14 @@
         }
     </style>
 
-    <title>Freeladev Sites | Em construção</title>
+    <title>TEMPLÔ | Em construção</title>
 </head>
 <body>
     <div>
-        <img id="desktop" src="<?= $base_url; ?>img/banner-construcao-desktop.png">
-        <img id="mobile" src="<?= $base_url; ?>img/banner-construcao-mobile.png">
+        <a href="https://instagram.com" target="_blank">
+            <img id="desktop" src="<?= $base_url; ?>img/banner-construcao-desktop.png">
+            <img id="mobile" src="<?= $base_url; ?>img/banner-construcao-mobile.png">
+        </a>
     </div>
 </body>
 </html>

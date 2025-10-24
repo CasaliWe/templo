@@ -4,6 +4,10 @@
     // buscar contatos
     use Repositories\ContatosRepository;
     $contatos = ContatosRepository::getContatos();
+
+    // buscar banners iniciais
+    use Repositories\BannerInicialRepository;
+    $bannersIniciais = BannerInicialRepository::getAll();
 ?>
 
 <!DOCTYPE html>
@@ -14,13 +18,17 @@
 
 </head>
 <body>
+    <!-- WPP FLOAT -->
+    <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>
+    <!-- WPP FLOAT -->
 
     <!-- MENU -->
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
-
-
+    <!-- FOOTER -->
+    <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
+    <!-- FOOTER -->
 
 
 
