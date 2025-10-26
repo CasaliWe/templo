@@ -30,6 +30,10 @@
     <?php include_once  __DIR__ .'/modulos/banner-galeria/index.php'; ?>
     <!-- BANNER GALERIA -->
 
+    <!-- CONTENT GALERIA -->
+    <?php include_once  __DIR__ .'/modulos/content-galeria/index.php'; ?>
+    <!-- CONTENT GALERIA -->
+
     <!-- FOOTER -->
     <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
     <!-- FOOTER -->
