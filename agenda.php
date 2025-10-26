@@ -30,6 +30,14 @@
     <?php include_once  __DIR__ .'/modulos/banner-agenda/index.php'; ?>
     <!-- BANNER AGENDA -->
 
+    <!-- CONTENT AGENDA -->
+    <?php include_once  __DIR__ .'/modulos/content-agenda/index.php'; ?>
+    <!-- CONTENT AGENDA -->
+
+    <!-- CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/contato/index.php'; ?>
+    <!-- CONTATO -->
+
     <!-- FOOTER -->
     <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
     <!-- FOOTER -->

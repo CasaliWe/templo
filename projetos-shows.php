@@ -29,6 +29,14 @@
     <!-- PROJETOS E SHOWS -->
     <?php include_once  __DIR__ .'/modulos/banner-projeto-shows/index.php'; ?>
     <!-- PROJETOS E SHOWS -->
+     
+    <!-- PROJETOS E SHOWS CONTENT -->
+    <?php include_once  __DIR__ .'/modulos/content-projeto-shows/index.php'; ?>
+    <!-- PROJETOS E SHOWS CONTENT -->
+
+    <!-- CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/contato/index.php'; ?>
+    <!-- CONTATO -->
 
     <!-- FOOTER -->
     <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
