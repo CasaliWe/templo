@@ -26,6 +26,10 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- BANNER AGENDA -->
+    <?php include_once  __DIR__ .'/modulos/banner-agenda/index.php'; ?>
+    <!-- BANNER AGENDA -->
+
     <!-- FOOTER -->
     <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
     <!-- FOOTER -->

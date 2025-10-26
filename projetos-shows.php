@@ -26,6 +26,10 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- PROJETOS E SHOWS -->
+    <?php include_once  __DIR__ .'/modulos/banner-projeto-shows/index.php'; ?>
+    <!-- PROJETOS E SHOWS -->
+
     <!-- FOOTER -->
     <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
     <!-- FOOTER -->
