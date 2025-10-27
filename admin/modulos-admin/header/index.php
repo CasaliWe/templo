@@ -13,6 +13,9 @@
 <!-- FAVICON -->
 <link rel="icon" href="<?php echo $base_url ?>assets/imagens/favicon-admin/favicon-admin.png">
 
+<!-- ALERT -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <!-- SWIPER -->
 <link rel="icon" href="<?php echo $base_url ?>assets/utils/swiper/swiper.css">
 

@@ -8,6 +8,10 @@
     // buscar banners iniciais
     use Repositories\BannerInicialRepository;
     $bannersIniciais = BannerInicialRepository::getAll();
+
+    // PEGANDO imagens
+    use Repositories\GaleriaRepository;
+    $eventos = GaleriaRepository::get();
 ?>
 
 <!DOCTYPE html>

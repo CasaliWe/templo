@@ -57,37 +57,15 @@
         <h2 class="text-white mb-3 mt-5 display-5">REGISTROS</h2>
 
         <div class="row mb-5 pb-4">
-            <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro">
-                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
-                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
-                    </a>
+            <?php foreach ($imagensRecentes as $key => $img) { ?>
+                <div class="col-6 col-lg-3 px-2">
+                    <div class="container-img-registro">
+                        <a href='<?= $base_url ?>admin/assets/imagens/arquivos/galeria/<?= $img->imagem ?>' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
+                            <img src='<?= $base_url ?>admin/assets/imagens/arquivos/galeria/<?= $img->imagem ?>'>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro">
-                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
-                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro">
-                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
-                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3 px-2">
-                <div class="container-img-registro">
-                    <a href='<?= $base_url ?>assets/imagens/site/exemplo-1.png' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
-                        <img src='<?= $base_url ?>assets/imagens/site/exemplo-1.png'>
-                    </a>
-                </div>
-            </div>
+            <?php } ?>
         </div>
 
         <div class="text-center mt-5">
