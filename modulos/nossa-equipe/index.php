@@ -64,8 +64,8 @@
         <p <?= $_ENV['ANIMA_SCROLL']; ?> class="text-center mb-4 mt-5 text-white font-inter-2 px-3 px-lg-0">Conheça mais sobre nosso trabalho nas plataformas digitais</p>
 
         <div <?= $_ENV['ANIMA_SCROLL']; ?> class="d-flex justify-content-center align-items-center flex-column flex-lg-row">
-            <a href="#" target="_blank" class="mb-3 mx-2"><img style="height: 40px;" src='<?= $base_url ?>assets/imagens/site/youtube-music.png'></a>
-            <a href="#" target="_blank" class="mb-3 mx-2"><img style="height: 40px;" src='<?= $base_url ?>assets/imagens/site/spotify-music.png'></a>
+            <a href="<?= $plataforma['youtube']; ?>" target="_blank" class="mb-3 mx-2"><img style="height: 40px;" src='<?= $base_url ?>assets/imagens/site/youtube-music.png'></a>
+            <a href="<?= $plataforma['spotify']; ?>" target="_blank" class="mb-3 mx-2"><img style="height: 40px;" src='<?= $base_url ?>assets/imagens/site/spotify-music.png'></a>
         </div>
     </div>
 </section>

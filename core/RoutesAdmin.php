@@ -8,6 +8,7 @@ class RoutesAdmin {
         '/admin/galeria'     => 'Galeria',
         '/admin/blog'        => 'Blog',
         '/admin/lancamento'  => 'Lançamento',
+        '/admin/plataforma'  => 'Plataformas digitais',
         '/admin/agenda'      => 'Agenda',
         '/admin/analytics'      => 'Analytics',
         '/admin/banners'     => 'Banners'

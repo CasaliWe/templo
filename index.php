@@ -19,6 +19,9 @@
 
     use Repositories\LancamentoRepository;
     $lancamento = LancamentoRepository::getAll();
+
+    use Models\Plataformas;
+    $plataforma = Plataformas::where('id', 1)->first();
 ?>
 
 <!DOCTYPE html>
