@@ -12,6 +12,10 @@
     // PEGANDO 4 IMAGENS
     use Repositories\GaleriaRepository;
     $imagensRecentes = GaleriaRepository::getRecentes();
+
+    // pegando as news
+    use Repositories\BlogRepository;
+    $noticias = BlogRepository::getAll();
 ?>
 
 <!DOCTYPE html>

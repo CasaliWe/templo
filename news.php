@@ -8,6 +8,14 @@
     // buscar banners iniciais
     use Repositories\BannerInicialRepository;
     $bannersIniciais = BannerInicialRepository::getAll();
+
+    // pegando new
+    use Repositories\BlogRepository;
+    if (!isset($_GET['id']) || empty($_GET['id'])) {
+        header('Location: ' . $base_url . 'projetos-shows.php');
+        exit;
+    }
+    $noticia = BlogRepository::getOne($_GET['id']);
 ?>
 
 <!DOCTYPE html>

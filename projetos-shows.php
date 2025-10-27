@@ -8,6 +8,10 @@
     // buscar banners iniciais
     use Repositories\BannerInicialRepository;
     $bannersIniciais = BannerInicialRepository::getAll();
+
+    // pegando as news
+    use Repositories\BlogRepository;
+    $noticias = BlogRepository::getAll();
 ?>
 
 <!DOCTYPE html>
