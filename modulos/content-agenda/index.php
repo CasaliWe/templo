@@ -14,13 +14,15 @@
 
 
 <section class="fundos py-5">
+    <h2 class="d-none">Agenda</h2>
+
     <div class="container mx-auto py-3">
 
-        <h1 class="text-white display-6 mb-5 text-center">PRÓXIMOS SHOWS</h1>
+        <h1 <?= $_ENV['ANIMA_SCROLL']; ?> class="text-white display-6 mb-5 text-center">PRÓXIMOS SHOWS</h1>
 
         <!-- item -->
         <?php foreach ($agendas as $key => $agenda) { ?>
-            <div class="mb-5 w-100 p-3 px-lg-5 bg-0 container-item-agenda">
+            <div <?= $_ENV['ANIMA_SCROLL']; ?> class="mb-5 w-100 p-3 px-lg-5 bg-0 container-item-agenda">
                 <h2 class="text-white mb-1"><?= $agenda['titulo']; ?></h2>
                 <p class="text-white font-inter mb-1"><img src='<?= $base_url ?>assets/imagens/site/ico-agenda.png' style="width: 15px;" class="me-1"> <?= date('d/m/Y', strtotime($agenda['data'])) ?></p>
                 <p class="text-white font-inter mb-3"><img src='<?= $base_url ?>assets/imagens/site/ico-horas.png' style="width: 15px;" class="me-1"> <?= $agenda['hora']; ?></p>

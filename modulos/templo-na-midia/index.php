@@ -52,13 +52,13 @@
 
 <section class="fundos py-5">
     <div class="py-5 container mx-auto">
-        <div class="text-center mb-5">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> class="text-center mb-5">
             <img id="title-templo-midia" src='<?= $base_url ?>assets/imagens/site/title-templo-midia.png'>
         </div>
 
         <div class="row mb-3">
             <?php foreach ($noticias as $key => $new) { ?>
-                <div class="mb-5 col-12 col-lg-4 px-3">
+                <div <?= $_ENV['ANIMA_SCROLL']; ?> class="mb-5 col-12 col-lg-4 px-3">
                     <div class="container-projeto-img-preview">
                         <img src='<?= $base_url ?>admin/assets/imagens/arquivos/blog/<?= $new['capa'] ?>'>
                     </div>

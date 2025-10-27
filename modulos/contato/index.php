@@ -16,13 +16,15 @@
 
 
 <section class="py-5" style="background-color: #1A1A1A;">
+    <h2 class="d-none">Contato</h2>
+
     <div class="px-4 px-lg-0 container mx-auto">
-        <div class="mb-5">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> class="mb-5">
             <img class="title-fale-conosco d-none d-lg-block" src='<?= $base_url ?>assets/imagens/site/title-fale-conosco.png'>
             <img class="title-fale-conosco d-block d-lg-none" src='<?= $base_url ?>assets/imagens/site/title-fale-conosco-mobile.png'>
         </div>
 
-        <div class="row">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> class="row">
             <div id="contato" class="col-12 col-lg-6 order-2 order-lg-1">
                 <form action="<?= $base_url; ?>modulos/contato/php/enviar.php" method="post">
                     <div class="mb-3">

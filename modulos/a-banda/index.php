@@ -46,17 +46,19 @@
 
 
 <section id="banda" class="fundos py-5">
+    <h2 class="d-none"> A banda Templô</h2>
+
     <div class="container mx-auto py-3 px-4 px-lg-0">
-        <img class="mb-3" id="title-a-banda" src='<?= $base_url ?>assets/imagens/site/title-a-banda.png'>
-        <p class="text-white font-kanit mb-4" id="texto-a-banda">A <span class="text-0">Banda Templô</span> surge das entranhas da cultura underground de Passo Fundo/RS, carregando na voz e nos instrumentos a urgência de quem tem algo a dizer. <br><br> Nossa música é uma ponte entre o peso do rock e a poesia do cotidiano, onde a emoção encontra o palco, e o manifesto se transforma em canção. Acreditamos que a arte precisa ocupar espaços públicos, democratizar o acesso à cultura e ser ferramenta de transformação social.</p>
-        <div>
+        <img <?= $_ENV['ANIMA_SCROLL']; ?> class="mb-3" id="title-a-banda" src='<?= $base_url ?>assets/imagens/site/title-a-banda.png'>
+        <p <?= $_ENV['ANIMA_SCROLL']; ?> class="text-white font-kanit mb-4" id="texto-a-banda">A <span class="text-0">Banda Templô</span> surge das entranhas da cultura underground de Passo Fundo/RS, carregando na voz e nos instrumentos a urgência de quem tem algo a dizer. <br><br> Nossa música é uma ponte entre o peso do rock e a poesia do cotidiano, onde a emoção encontra o palco, e o manifesto se transforma em canção. Acreditamos que a arte precisa ocupar espaços públicos, democratizar o acesso à cultura e ser ferramenta de transformação social.</p>
+        <div <?= $_ENV['ANIMA_SCROLL']; ?>>
             <span class="text-0 me-2">NOS ACOMPANHE PELO INSTAGRAM:</span>
             <a href="<?= $contatos['instagram']; ?>" target="_blank"><img style="width: 170px;" src='<?= $base_url ?>assets/imagens/site/btn-instagram.png'></a>
         </div>
 
-        <h2 class="text-white mb-3 mt-5 display-5">REGISTROS</h2>
+        <h2 <?= $_ENV['ANIMA_SCROLL']; ?> class="text-white mb-3 mt-5 display-5">REGISTROS</h2>
 
-        <div class="row mb-5 pb-4">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> class="row mb-5 pb-4">
             <?php foreach ($imagensRecentes as $key => $img) { ?>
                 <div class="col-6 col-lg-3 px-2">
                     <div class="container-img-registro">
@@ -68,7 +70,7 @@
             <?php } ?>
         </div>
 
-        <div class="text-center mt-5">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> class="text-center mt-5">
             <a href="<?= $base_url; ?>galeria.php" class="py-3 px-5 bg-0 text-white">GALERIA DE IMAGENS</a>
         </div>
     </div>

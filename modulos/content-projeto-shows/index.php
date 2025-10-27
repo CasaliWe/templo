@@ -39,11 +39,13 @@
 
 
 <section style="background-color: #121212;" class="py-5">
+    <h2 class="d-none">Projetos e Shows</h2>
+
     <div class="container mx-auto py-3">
 
         <div class="row mb-3">
             <?php foreach ($noticias as $key => $noticia) { ?>
-                <div class="mb-5 col-12 col-lg-4 px-3">
+                <div <?= $_ENV['ANIMA_SCROLL']; ?> class="mb-5 col-12 col-lg-4 px-3">
                     <div class="container-projeto-img-preview">
                         <img src='<?= $base_url ?>admin/assets/imagens/arquivos/blog/<?= $noticia['capa'] ?>'>
                     </div>

@@ -58,12 +58,14 @@
 
 
 <section class="bg-white py-5">
+    <h2 class="d-none">Nosso Lançamento</h2>
+
     <div class="container mx-auto py-3">
-        <div class="text-center mb-4">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> class="text-center mb-4">
             <img src='<?= $base_url ?>assets/imagens/site/title-ouca.png' id="title-ouca">
         </div>
 
-        <div id="container-ouca-capa">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> id="container-ouca-capa">
             <img src='<?= $base_url ?>admin/assets/imagens/arquivos/lancamento/<?= $lancamento[0]['imagem']; ?>'>
         </div>
 
@@ -76,7 +78,7 @@
             $am = isset($lancamento[0]['amazon']) ? trim((string)$lancamento[0]['amazon']) : '';
         ?>
 
-        <div class="border-0 py-3 mx-auto px-5 container-links-ouca d-flex align-items-center justify-content-center">
+        <div <?= $_ENV['ANIMA_SCROLL']; ?> class="border-0 py-3 mx-auto px-5 container-links-ouca d-flex align-items-center justify-content-center">
             <?php if ($yt !== ''): ?>
                 <a href="<?= $yt; ?>" class="mx-3"><img style="width: 30px;" src='<?= $base_url ?>assets/imagens/site/ico-youtube.png' alt="YouTube"></a>
             <?php endif; ?>
