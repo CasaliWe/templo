@@ -8,6 +8,9 @@
     // buscar banners iniciais
     use Repositories\BannerInicialRepository;
     $bannersIniciais = BannerInicialRepository::getAll();
+
+    use Models\Agenda;
+    $agendas = Agenda::orderBy('data', 'desc')->get();
 ?>
 
 <!DOCTYPE html>
