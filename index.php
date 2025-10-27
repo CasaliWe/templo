@@ -16,6 +16,9 @@
     // pegando as news
     use Repositories\BlogRepository;
     $noticias = BlogRepository::getAll();
+
+    use Repositories\LancamentoRepository;
+    $lancamento = LancamentoRepository::getAll();
 ?>
 
 <!DOCTYPE html>

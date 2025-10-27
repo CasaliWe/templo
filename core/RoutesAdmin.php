@@ -7,6 +7,7 @@ class RoutesAdmin {
         '/admin/dashboard'   => 'Contatos | Endereço',
         '/admin/galeria'     => 'Galeria',
         '/admin/blog'        => 'Blog',
+        '/admin/lancamento'  => 'Lançamento',
         '/admin/banners'     => 'Banners'
     ];
 
