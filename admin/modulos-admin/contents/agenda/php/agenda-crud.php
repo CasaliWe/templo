@@ -63,6 +63,26 @@ try {
                 $agenda = Agenda::findOrFail($id);
                 echo json_encode(['success' => true, 'data' => $agenda]);
                 break;
+            
+            case 'toggle_realizado':
+                $id = $_POST['id'] ?? 0;
+                // valor: '1' ou '0'
+                $valor = isset($_POST['valor']) ? (int) $_POST['valor'] : null;
+                if ($id == 0 || $valor === null) {
+                    echo json_encode(['success' => false, 'message' => 'Parâmetros inválidos']);
+                    break;
+                }
+                
+                $agenda = Agenda::findOrFail($id);
+                $agenda->realizado = $valor ? 1 : 0;
+                $agenda->save();
+                echo json_encode([
+                    'success' => true,
+                    'message' => $agenda->realizado ? 'Agenda marcada como realizada.' : 'Agenda desmarcada como realizada.',
+                    'realizado' => (bool)$agenda->realizado,
+                    'id' => $agenda->id
+                ]);
+                break;
                 
             default:
                 echo json_encode(['success' => false, 'message' => 'Ação inválida']);

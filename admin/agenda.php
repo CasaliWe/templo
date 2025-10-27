@@ -204,6 +204,29 @@
         }
     }
 
+    function toggleRealizado(id, valor) {
+        fetch('./modulos-admin/contents/agenda/php/agenda-crud.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'action=toggle_realizado&id=' + encodeURIComponent(id) + '&valor=' + encodeURIComponent(valor)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Simples e objetivo: recarrega para refletir mudanças
+                location.reload();
+            } else {
+                alert(data.message || 'Não foi possível atualizar o status.');
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Erro ao atualizar status de realizado');
+        });
+    }
+
     function confirmarDelete() {
         const id = document.getElementById('agendaId').value;
         if (confirm('Tem certeza que deseja deletar esta agenda?')) {

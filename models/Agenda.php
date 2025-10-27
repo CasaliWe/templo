@@ -12,7 +12,8 @@ class Agenda extends Model {
         'hora',
         'local_1',
         'local_2',
-        'programacao'
+        'programacao',
+        'realizado'
     ];
     public $timestamps = true;
 }

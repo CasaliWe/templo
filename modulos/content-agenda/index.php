@@ -12,8 +12,20 @@
     }
 </style>
 
+<?php 
+    $realizado = [];
+    $nao_realizado = [];
+    foreach ($agendas as $key => $ag) { 
+        if ($ag['realizado']) {
+            $realizado[] = $ag;
+        } else {
+            $nao_realizado[] = $ag;
+        }
+    } 
+?>
 
-<section class="fundos py-5">
+
+<section class="<?= count($nao_realizado) < 1 ? 'd-none' : '' ?> fundos py-5">
     <h2 class="d-none">Agenda</h2>
 
     <div class="container mx-auto py-3">
@@ -22,6 +34,7 @@
 
         <!-- item -->
         <?php foreach ($agendas as $key => $agenda) { ?>
+            <?php if($agenda['realizado']) continue; ?>
             <div <?= $_ENV['ANIMA_SCROLL']; ?> class="mb-5 w-100 p-3 px-lg-5 bg-0 container-item-agenda">
                 <h2 class="text-white mb-1"><?= $agenda['titulo']; ?></h2>
                 <p class="text-white font-inter mb-1"><img src='<?= $base_url ?>assets/imagens/site/ico-agenda.png' style="width: 15px;" class="me-1"> <?= date('d/m/Y', strtotime($agenda['data'])) ?></p>
@@ -56,5 +69,31 @@
         <?php } ?>
         <!-- item -->
 
+    </div>
+</section>
+
+
+
+
+<section style="background-color: #4A4A4A;" class="py-5 <?= count($realizado) < 1 ? 'd-none' : '' ?>">
+    <div class="container mx-auto">
+        <h1 class="text-center text-white mb-5 display-6">SHOWS REALIZADOS</h1>
+
+        <?php foreach ($agendas as $key => $agenda) { ?>
+            <?php if(!$agenda['realizado']) continue; ?>
+            <div <?= $_ENV['ANIMA_SCROLL']; ?> style="background-color: #f2f2f21c;" class="mb-5 w-100 p-3 px-lg-5 container-item-agenda">
+                <h2 class="text-white mb-2"><?= $agenda['titulo']; ?></h2>
+                
+                <div style="background-color: #ffffff3a; border-left: 2px solid white;" class="p-3 d-flex align-items-start">
+                    <img src='<?= $base_url ?>assets/imagens/site/ico-loca.png' style="width: 15px;" class="me-1">
+                    <span class="ms-2">
+                        <h6 class="mb-0 text-white"><?= $agenda['local_1']; ?></h6>
+                        <p class="mt-0 mb-0 text-white font-inter"><?= $agenda['local_2']; ?></p>
+                    </span>
+                </div>
+
+                <p class="mt-2 text-white font-inter mb-1"><img src='<?= $base_url ?>assets/imagens/site/ico-agenda.png' style="width: 15px;" class="me-1"> <?= date('d/m/Y', strtotime($agenda['data'])) ?></p>
+            </div>
+        <?php } ?>
     </div>
 </section>

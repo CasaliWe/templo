@@ -15,6 +15,15 @@ $agendas = Agenda::orderBy('data', 'desc')->get();
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.agenda-item.realizado {
+    border-left-color: #28a745;
+    background: #f6fffa;
+}
+
+.badge-realizado {
+    background: #28a745;
+}
+
 .programacao-item {
     background: #f8f9fa;
     padding: 5px 10px;
@@ -48,12 +57,15 @@ $agendas = Agenda::orderBy('data', 'desc')->get();
     <div class="accordion" id="accordionAgenda">
         <?php if($agendas->count() > 0): ?>
             <?php foreach($agendas as $index => $agenda): ?>
-                <div class="accordion-item agenda-item">
+                <div class="accordion-item agenda-item <?= ($agenda->realizado ? 'realizado' : '') ?>">
                     <h2 class="accordion-header" id="heading<?= $agenda->id ?>">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $agenda->id ?>" aria-expanded="false" aria-controls="collapse<?= $agenda->id ?>">
                             <div class="w-100 d-flex justify-content-between align-items-center me-3">
                                 <div>
                                     <strong><?= $agenda->titulo ?></strong>
+                                    <?php if($agenda->realizado): ?>
+                                        <span class="badge badge-realizado ms-2"><i class="fas fa-check"></i> Realizado</span>
+                                    <?php endif; ?>
                                     <small class="text-muted ms-2"><?= date('d/m/Y', strtotime($agenda->data)) ?></small>
                                 </div>
                                 <div class="text-end">
@@ -99,6 +111,13 @@ $agendas = Agenda::orderBy('data', 'desc')->get();
                             <?php endif; ?>
                             
                             <div class="mt-3 d-flex gap-2">
+                                <button type="button" class="btn btn-sm <?= $agenda->realizado ? 'btn-outline-secondary' : 'btn-success' ?>" onclick="toggleRealizado(<?= $agenda->id ?>, <?= $agenda->realizado ? '0' : '1' ?>)">
+                                    <?php if($agenda->realizado): ?>
+                                        <i class="fas fa-undo"></i> Desmarcar realizado
+                                    <?php else: ?>
+                                        <i class="fas fa-check"></i> Marcar realizado
+                                    <?php endif; ?>
+                                </button>
                                 <button type="button" class="btn btn-warning btn-sm" onclick="editarAgenda(<?= $agenda->id ?>)">
                                     <i class="fas fa-edit"></i> Editar
                                 </button>
