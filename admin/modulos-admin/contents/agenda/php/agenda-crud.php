@@ -26,7 +26,7 @@ try {
                     'hora' => $_POST['hora'] ?? '',
                     'local_1' => $_POST['local_1'] ?? '',
                     'local_2' => $_POST['local_2'] ?? '',
-                    'programacao' => str_replace(';', "\n", $_POST['programacao'] ?? '')
+                    'programacao' => $_POST['programacao'] ?? ''
                 ];
                 
                 $agenda = Agenda::create($data);
@@ -41,7 +41,7 @@ try {
                     'hora' => $_POST['hora'] ?? '',
                     'local_1' => $_POST['local_1'] ?? '',
                     'local_2' => $_POST['local_2'] ?? '',
-                    'programacao' => str_replace(';', "\n", $_POST['programacao'] ?? '')
+                    'programacao' => $_POST['programacao'] ?? ''
                 ];
                 
                 $agenda = Agenda::findOrFail($id);
@@ -61,7 +61,6 @@ try {
                 $id = $_POST['id'] ?? 0;
                 
                 $agenda = Agenda::findOrFail($id);
-                $agenda->programacao = str_replace("\n", ';', $agenda->programacao);
                 echo json_encode(['success' => true, 'data' => $agenda]);
                 break;
                 

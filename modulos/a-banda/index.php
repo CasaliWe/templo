@@ -60,7 +60,7 @@
 
         <div <?= $_ENV['ANIMA_SCROLL']; ?> class="row mb-5 pb-4">
             <?php foreach ($imagensRecentes as $key => $img) { ?>
-                <div class="col-6 col-lg-3 px-2">
+                <div class="mb-2 col-6 col-lg-3 px-2">
                     <div class="container-img-registro">
                         <a href='<?= $base_url ?>admin/assets/imagens/arquivos/galeria/<?= $img->imagem ?>' data-fancybox="galeria-registros" data-caption="Registro da Banda Templô">
                             <img src='<?= $base_url ?>admin/assets/imagens/arquivos/galeria/<?= $img->imagem ?>'>

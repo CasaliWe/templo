@@ -241,22 +241,6 @@
 
         // Event listener para preview da programação
         document.getElementById('programacao').addEventListener('input', updatePreview);
-        
-        // Event listener para quebrar linha automaticamente ao digitar ;
-        document.getElementById('programacao').addEventListener('input', function(e) {
-            const textarea = e.target;
-            const cursorPos = textarea.selectionStart;
-            const textValue = textarea.value;
-            
-            // Se o último caractere digitado foi ; e não há \n depois dele
-            if (textValue[cursorPos - 1] === ';' && textValue[cursorPos] !== '\n') {
-                // Adiciona quebra de linha após o ;
-                const newValue = textValue.slice(0, cursorPos) + '\n' + textValue.slice(cursorPos);
-                textarea.value = newValue;
-                // Reposiciona o cursor após a quebra de linha
-                textarea.selectionStart = textarea.selectionEnd = cursorPos + 1;
-            }
-        });
     });
     </script>
 

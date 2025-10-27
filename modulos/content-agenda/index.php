@@ -40,9 +40,14 @@
 
                     <ul class="list-unstyled">
                         <?php
-                        $programacao = explode(';', $agenda['programacao']);
+                        // Separar por ; se existir, senão por \n (compatibilidade com dados antigos)
+                        $programacao = strpos($agenda['programacao'], ';') !== false ? 
+                            explode(";", $agenda['programacao']) : 
+                            explode("\n", $agenda['programacao']);
                         foreach ($programacao as $item) {
-                            echo '<li class="font-inter text-white mb-2 small">- ' . trim($item) . '</li>';
+                            if(trim($item)) {
+                                echo '<li class="font-inter text-white mb-2 small">- ' . trim($item) . '</li>';
+                            }
                         }
                         ?>
                     </ul>

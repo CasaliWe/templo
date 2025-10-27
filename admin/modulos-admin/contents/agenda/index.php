@@ -82,7 +82,10 @@ $agendas = Agenda::orderBy('data', 'desc')->get();
                                     <strong>Programação:</strong>
                                     <div class="mt-2">
                                         <?php 
-                                        $programacao = explode("\n", $agenda->programacao);
+                                        // Separar por ; se existir, senão por \n (compatibilidade com dados antigos)
+                                        $programacao = strpos($agenda->programacao, ';') !== false ? 
+                                            explode(";", $agenda->programacao) : 
+                                            explode("\n", $agenda->programacao);
                                         foreach($programacao as $item):
                                             if(trim($item)):
                                         ?>
