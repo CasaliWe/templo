@@ -34,7 +34,7 @@
             <div class="mb-5">
                 <h2 <?= $_ENV['ANIMA_SCROLL']; ?> class="display-5 text-white mb-3"><?= $evento['nome_evento']; ?></h2>
     
-                <div class="row">
+                <div class="row mb-4">
                     <?php foreach ($evento['imagemEvento'] as $key => $img) { ?>
                         <div <?= $_ENV['ANIMA_SCROLL']; ?> class="mb-2 col-6 col-lg-3 px-1">
                             <div class="container-img-galeria-pag">
@@ -46,6 +46,10 @@
                     <?php } ?>
     
                 </div>
+
+                <a href="<?= $evento['link'] ?>" target="_blank">
+                    <img style="width: 200px;" src='<?= $base_url ?>assets/imagens/site/click.png'>
+                </a>
             </div>
             <!-- item -->
         <?php } ?>

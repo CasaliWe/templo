@@ -8,7 +8,8 @@ class GaleriaEvento extends Model {
     protected $table = 'galeria_evento';
     protected $fillable = [
         'nome_evento',
-        'data_evento'
+        'data_evento',
+        'link'
     ];
     public $timestamps = false;
 

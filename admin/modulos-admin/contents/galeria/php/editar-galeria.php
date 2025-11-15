@@ -6,8 +6,9 @@ use Repositories\GaleriaRepository;
 $id = filter_input(INPUT_POST, 'id_evento_editar', FILTER_SANITIZE_SPECIAL_CHARS);
 $nome = filter_input(INPUT_POST, 'nome_evento_editar', FILTER_SANITIZE_SPECIAL_CHARS);
 $data = filter_input(INPUT_POST, 'data_evento_editar', FILTER_SANITIZE_SPECIAL_CHARS);
+$link = filter_input(INPUT_POST, 'link_evento_editar', FILTER_SANITIZE_SPECIAL_CHARS);
 
-$res = GaleriaRepository::update($id, $nome, $data);
+$res = GaleriaRepository::update($id, $nome, $data, $link);
 if ($res) {
     header('Location: ../../../../galeria.php?success=true');
 } else {

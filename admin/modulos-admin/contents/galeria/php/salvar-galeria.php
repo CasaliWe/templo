@@ -5,8 +5,9 @@ use Repositories\GaleriaRepository;
 
 $nome_evento = filter_input(INPUT_POST, 'nome-evento', FILTER_SANITIZE_SPECIAL_CHARS);
 $data_evento = filter_input(INPUT_POST, 'data-evento', FILTER_SANITIZE_SPECIAL_CHARS);
+$link = filter_input(INPUT_POST, 'link', FILTER_SANITIZE_SPECIAL_CHARS);
 
-$res = GaleriaRepository::create($nome_evento, $data_evento);
+$res = GaleriaRepository::create($nome_evento, $data_evento, $link);
 if ($res) {
     header('Location: ../../../../galeria.php?create=true');
 } else {

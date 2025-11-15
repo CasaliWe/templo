@@ -66,7 +66,7 @@
                             <!-- btn deletar evento -->
 
                             <!-- btn editar evento -->
-                            <button onclick="editarEventoModal('<?= $evento['id']; ?>', '<?= $evento['nome_evento']; ?>', '<?= $evento['data_evento']; ?>')" class="btn btn-primary btn-sm btn-sm py-2 px-4">Editar evento</button>
+                            <button onclick="editarEventoModal('<?= $evento['id']; ?>', '<?= $evento['nome_evento']; ?>', '<?= $evento['data_evento']; ?>', '<?= $evento['link']; ?>')" class="btn btn-primary btn-sm btn-sm py-2 px-4">Editar evento</button>
                             <!-- btn editar evento -->
                         </div>
 
@@ -83,10 +83,11 @@
 
 
 <script>
-    function editarEventoModal(id, nome, data) {
+    function editarEventoModal(id, nome, data, link) {
         document.getElementById("id_evento_editar").value = id;
         document.getElementById("nome_evento_editar").value = nome;
         document.getElementById("data_evento_editar").value = data;
+        document.getElementById("link_evento_editar").value = link;
 
         var meuModal = new bootstrap.Modal(document.getElementById('modal-editar-galeria'));
         meuModal.show();

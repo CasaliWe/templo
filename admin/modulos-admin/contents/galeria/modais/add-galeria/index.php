@@ -18,6 +18,10 @@
               <input type='date' id='data-evento' name='data-evento' class='form-control' required>
             </div>
 
+            <div class='mb-3'>
+              <label class="small" for='link'>Link*</label>
+              <input type='text' id='link' name='link' class='form-control' required>
+            </div>
 
           </div>
           <div class="modal-footer">

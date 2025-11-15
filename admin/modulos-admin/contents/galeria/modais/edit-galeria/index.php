@@ -19,6 +19,11 @@
               <input type='date' id='data_evento_editar' name='data_evento_editar' class='form-control' required>
             </div>
 
+            <div class='mb-3'>
+              <label class="small" for='link_evento_editar'>Link Evento</label>
+              <input type='text' id='link_evento_editar' name='link_evento_editar' class='form-control'>
+            </div>
+
 
           </div>
           <div class="modal-footer">

@@ -18,10 +18,11 @@ class GaleriaRepository {
         
 
         // criando evento
-        public static function create($nome_evento, $data_evento) {
+        public static function create($nome_evento, $data_evento, $link) {
             $dados = [
                 'nome_evento' => $nome_evento,
-                'data_evento' => $data_evento
+                'data_evento' => $data_evento,
+                'link' => $link
             ];
             $res = GaleriaEvento::create($dados);
 
@@ -68,11 +69,12 @@ class GaleriaRepository {
         }
 
         // editar evento
-        public static function update($id, $nome, $data) {
+        public static function update($id, $nome, $data, $link) {
             $res = GaleriaEvento::where('id', $id)
                 ->update([
                     'nome_evento' => $nome,
-                    'data_evento' => $data
+                    'data_evento' => $data,
+                    'link' => $link
                 ]);
 
             if($res) {
